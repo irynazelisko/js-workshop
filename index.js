@@ -8,7 +8,7 @@ function createUser(user) {
         window.location.href = `posts.html?id=${nameId}`;
         getUserPosts(nameId);
     });
-    li.classList.add('list-group', 'border', 'border-primary', 'rounded', 'p-3', 'mb-3', 'shadow-sm', 'bg-light');
+    li.classList.add('list-group', 'border', 'border-primary', 'rounded', 'p-3', 'm-3', 'shadow-sm', 'bg-light');
     li.innerText = `${user.name}`;
     console.log(li);
     return li;
@@ -70,6 +70,8 @@ function getUsers() {
             blogContainer.appendChild(errorMessageBox);
         })
 }
+
+getUsers()
 
 
 
